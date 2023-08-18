@@ -1,0 +1,22 @@
+{
+    "posts": [
+        {
+            "articleTitle": "MyNewArticle4",
+            "aboutArticle": "This article is about Playwright BDD",
+            "articleDetail": "In this article we are going to discuss about Playwright POM",
+            "tagName": "introduction"
+        },
+        {
+            "articleTitle": "MyNewArticle5",
+            "aboutArticle": "This article is about Playwright POM",
+            "articleDetail": "In this article we are going to discuss about Playwright POM",
+            "tagName": "introduction"
+        },
+        {
+            "articleTitle": "MyNewArticle6",
+            "aboutArticle": "This article is about Playwright POM",
+            "articleDetail": "In this article we are going to discuss about Playwright POM",
+            "tagName": "introduction"
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="9.731151000022889">
+<testsuite name="POMTestJson.test.ts" timestamp="2023-08-18T11:47:41.628Z" hostname="chromium" tests="1" failures="0" skipped="0" time="8.186" errors="0">
+<testcase name="Blog Post › Create Blog post using json file" classname="POMTestJson.test.ts" time="8.186">
+</testcase>
+</testsuite>
+</testsuites>
