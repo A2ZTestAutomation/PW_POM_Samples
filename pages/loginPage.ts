@@ -21,4 +21,5 @@ export default class LoginPage {
     async clickLoginBtn() {
         await this.loginBtn.click()
     }
+
 }
