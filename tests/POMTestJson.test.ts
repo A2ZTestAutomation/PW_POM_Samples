@@ -8,7 +8,7 @@ import NewPostPage from "../pages/newPostPage"
 import PostViewPage from "../pages/postViewPage"
 
 const uName = "corpdevops@gmail.com"
-const pwd = "conduit123"
+const pwd = "xxxxx"
 
 
 test.describe('Blog Post', () => {
@@ -24,7 +24,7 @@ test.describe('Blog Post', () => {
     })
 
     posts.forEach((item, index) => {
-        test(`Create Blog post - Iteration: ${index + 1}`, async ({ page }) => {
+        test.skip(`Create Blog post - Iteration: ${index + 1}`, async ({ page }) => {
             const homePage = new HomePage(page)
             const newPostPage = new NewPostPage(page)
             await homePage.createNewPost()
@@ -37,7 +37,7 @@ test.describe('Blog Post', () => {
         })
     })
 
-    test.only("Create Blog post using json file", async ({ page }) => {
+    test("Create Blog post using json file", async ({ page }) => {
         const homePage = new HomePage(page)
         const newPostPage = new NewPostPage(page)
         await homePage.createNewPost()

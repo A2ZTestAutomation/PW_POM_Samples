@@ -1,6 +1,47 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="9.731151000022889">
-<testsuite name="POMTestJson.test.ts" timestamp="2023-08-18T11:47:41.628Z" hostname="chromium" tests="1" failures="0" skipped="0" time="8.186" errors="0">
-<testcase name="Blog Post › Create Blog post using json file" classname="POMTestJson.test.ts" time="8.186">
+<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="35.21097999989986">
+<testsuite name="POMTest.test.ts" timestamp="2023-12-11T10:58:44.806Z" hostname="chromium" tests="1" failures="0" skipped="0" time="12.456" errors="0">
+<testcase name="Blog Post App CRUD › View Post Details test-02" classname="POMTest.test.ts" time="12.456">
+</testcase>
+</testsuite>
+<testsuite name="POMTestJson.test.ts" timestamp="2023-12-11T10:58:44.806Z" hostname="chromium" tests="1" failures="1" skipped="0" time="29.999" errors="0">
+<testcase name="Blog Post › Create Blog post using json file" classname="POMTestJson.test.ts" time="29.999">
+<failure message="POMTestJson.test.ts:40:10 Create Blog post using json file" type="FAILURE">
+<![CDATA[  [chromium] › POMTestJson.test.ts:40:10 › Blog Post › Create Blog post using json file ───────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Target closed
+    =========================== logs ===========================
+    waiting for getByRole('link', { name: 'New Post' })
+    ============================================================
+
+       at ..\pages\homePage.ts:18
+
+      16 |     }
+      17 |     async createNewPost() {
+    > 18 |         await this.postLink.click()
+         |                             ^
+      19 |     }
+      20 |     async navigateToHome() {
+      21 |         await this.homeLink.click()
+
+        at HomePage.createNewPost (F:\Anandhi\workspace\playwrightTSWS\PW_POM_Sample\pages\homePage.ts:18:29)
+        at F:\Anandhi\workspace\playwrightTSWS\PW_POM_Sample\tests\POMTestJson.test.ts:43:24
+
+    Pending operations:
+      - locator.click at pages\homePage.ts:18:29
+
+
+    attachment #1: video (video/webm) ─────────────────────────────────────────────────────────────
+    test-results\POMTestJson-Blog-Post-Create-Blog-post-using-json-file-chromium\video.webm
+    ───────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\POMTestJson-Blog-Post-Create-Blog-post-using-json-file-chromium\video.webm]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>

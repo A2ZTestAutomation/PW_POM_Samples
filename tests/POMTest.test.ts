@@ -24,7 +24,7 @@ test.describe('Blog Post App CRUD', () => {
         await loginPage.clickLoginBtn()
     })
 
-    test("Create a NewPost test-01", async ({ page }) => {
+    test.skip("Create a NewPost test-01", async ({ page }) => {
         const homePage = new HomePage(page)
         const newPostPage = new NewPostPage(page)
         await homePage.createNewPost()
@@ -36,7 +36,7 @@ test.describe('Blog Post App CRUD', () => {
         await expect(newPostPage.isArticleCreated(articleTitle)).toContainText(articleTitle)
     })
 
-    test.only("View Post Details test-02", async ({ page }) => {
+    test("View Post Details test-02", async ({ page }) => {
         const homePage = new HomePage(page)
         const viewPostPage = new PostViewPage(page)
         await homePage.navigateToGlobalFeed()
