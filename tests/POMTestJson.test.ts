@@ -8,7 +8,7 @@ import NewPostPage from "../pages/newPostPage"
 import PostViewPage from "../pages/postViewPage"
 
 const uName = "corpdevops@gmail.com"
-const pwd = "xxxxx"
+const pwd = "conduit123"
 
 
 test.describe('Blog Post', () => {
